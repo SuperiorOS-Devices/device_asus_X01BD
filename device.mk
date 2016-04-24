@@ -148,6 +148,10 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     libgenlock
 
+# Doze mode
+PRODUCT_PACKAGES += \
+    XiaomiDoze
+
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
