@@ -76,9 +76,14 @@ PRODUCT_PACKAGES += \
 # ParanoidDoze
 PRODUCT_PACKAGES += \
     ParanoidDoze
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service
 
 # QTI Common
 -include vendor/qcom/common/*/qti-*.mk
+
+# USB
+PRODUCT_PACKAGES += \
+	android.hardware.usb@1.0-service.x01bd
