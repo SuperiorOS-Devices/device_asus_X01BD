@@ -170,6 +170,7 @@ BOARD_VNDK_VERSION := current
 
 # Wifi
 DISABLE_EAP_PROXY := true
+WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
 # Vendor init
 TARGET_INIT_VENDOR_LIB := libinit_X01BD
