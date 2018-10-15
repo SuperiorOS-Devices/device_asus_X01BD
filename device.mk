@@ -409,7 +409,9 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.target.rc \
     ueventd.qcom.rc \
-    init.performance.x01bd.rc
+    init.performance.x01bd.rc \
+    init.spectrum.rc \
+    init.spectrum.sh
 
 #QCOM
 PRODUCT_COPY_FILES += \
