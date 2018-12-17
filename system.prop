@@ -45,7 +45,11 @@ persist.asus.gesture.switch=1
 
 # Graphics
 debug.sf.enable_hwc_vds=1
-debug.sf.hw=1 
+debug.sf.hw=1
+ro.surface_flinger.vsync_event_phase_offset_ns=2000000
+ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
+
+
 debug.sf.latch_unsignaled=1
 debug.sf.early_phase_offset_ns=1500000
 debug.sf.early_app_phase_offset_ns=1500000
