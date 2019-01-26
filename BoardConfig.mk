@@ -241,6 +241,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 # RIL
 TARGET_RIL_VARIANT := caf
 PROTOBUF_SUPPORTED := true
+TARGET_USES_OLD_MNC_FORMAT := true
 
 # root extra folders
 BOARD_ROOT_EXTRA_FOLDERS := bt_firmware dsp firmware persist
