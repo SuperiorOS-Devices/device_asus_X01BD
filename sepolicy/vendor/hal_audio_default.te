@@ -1,2 +1,6 @@
 # Allow audio hal to get region_prop
 get_prop(hal_audio_default, region_prop)
+
+# Dirac
+get_prop(hal_audio_default, dirac_prop)
+set_prop(hal_audio_default, dirac_prop)
