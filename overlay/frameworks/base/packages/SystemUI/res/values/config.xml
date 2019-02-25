@@ -54,4 +54,7 @@
         <item>7</item> <!-- 3: HIGH -->
         <item>27</item> <!-- 4: SUN -->
     </integer-array>
+	
+    <!-- Whether to show HD icon in the status bar for volte -->
+    <bool name="config_display_hd_volte">true</bool>
 </resources>
