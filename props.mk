@@ -41,6 +41,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.gralloc.enable_fb_ubwc=1 \
     vendor.display.disable_skip_validate=1
 
+# FM
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.fm.transmitter=false
+
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_hwc_vds=1 \
