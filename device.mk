@@ -150,7 +150,7 @@ PRODUCT_PACKAGES += \
 
 # Doze mode
 PRODUCT_PACKAGES += \
-    XiaomiDoze
+    Doze
 
 # FM
 PRODUCT_PACKAGES += \
