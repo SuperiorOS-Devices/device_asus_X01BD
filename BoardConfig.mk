@@ -146,7 +146,7 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/firmware_mnt:/firmware
 
 # Power
-TARGET_TAP_TO_WAKE_NODE := "/proc/tpd_gesture"
+TARGET_GESTURES_NODE := "/proc/tpd_gesture"
 TARGET_OVERLAYS_POWERHAL := true
 TARGET_USES_INTERACTION_BOOST := true
 TARGET_USES_NON_LEGACY_POWERHAL := true
