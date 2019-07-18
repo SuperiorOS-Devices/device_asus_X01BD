@@ -244,6 +244,16 @@ void IPACM_ConntrackListener::HandleNonNatIPAddr(
 		ret = CheckNatIface(data, &NatIface);
 		if (!NatIface && ret == IPACM_SUCCESS)
 		{
+			/* Search the non nat iface ip address */
+			for (cnt = 0; cnt < MAX_IFACE_ADDRESS; cnt++)
+			{
+				if (data->ipv4_addr == nonnat_iface_ipv4_addr[cnt])
+				{
+					IPACMDBG("Already in nonna_iface_ipv4_addr_list (%d) ", cnt);
+					iptodot("with ipv4 address", nonnat_iface_ipv4_addr[cnt]);
+					return;
+				}
+			}
 			/* Cache the non nat iface ip address */
 			for (cnt = 0; cnt < MAX_IFACE_ADDRESS; cnt++)
 			{
@@ -345,10 +355,13 @@ void IPACM_ConntrackListener::HandleNeighIpAddrDelEvt(
 void IPACM_ConntrackListener::TriggerWANUp(void *in_param)
 {
 	 ipacm_event_iface_up *wanup_data = (ipacm_event_iface_up *)in_param;
+	 uint8_t mux_id;
 
 	 IPACMDBG_H("Recevied below information during wanup,\n");
-	 IPACMDBG_H("if_name:%s, ipv4_address:0x%x\n",
-						wanup_data->ifname, wanup_data->ipv4_addr);
+	 IPACMDBG_H("if_name:%s, ipv4_address:0x%x mux_id:%d, xlat_mux_id:%d\n",
+						wanup_data->ifname, wanup_data->ipv4_addr,
+						wanup_data->mux_id,
+						wanup_data->xlat_mux_id);
 
 	 if(wanup_data->ipv4_addr == 0)
 	 {
@@ -373,7 +386,11 @@ void IPACM_ConntrackListener::TriggerWANUp(void *in_param)
 
 	 if(nat_inst != NULL)
 	 {
-		 nat_inst->AddTable(wanup_data->ipv4_addr, wanup_data->mux_id);
+		 if (wanup_data->mux_id == 0)
+		   mux_id = wanup_data->xlat_mux_id;
+		 else
+		   mux_id = wanup_data->mux_id;
+		 nat_inst->AddTable(wanup_data->ipv4_addr, mux_id);
 	 }
 
 	 IPACMDBG("creating nat threads\n");
