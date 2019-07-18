@@ -129,6 +129,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.gralloc.enable_fb_ubwc=1 \
     vendor.display.disable_skip_validate=1
 
+# Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.havoc.maintainer=SonalSingh
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     media.aac_51_output_enabled=true \
