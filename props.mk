@@ -54,6 +54,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.hw=1 \
     debug.sf.latch_unsignaled=1
 
+# IOP properties
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.iop.enable_uxe=1 \
+    vendor.perf.iop_v3.enable=true
+
 #Netflix custom property
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.netflix.bsp_rev=Q660-13149-1
