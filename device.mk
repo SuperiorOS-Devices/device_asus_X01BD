@@ -21,7 +21,8 @@ $(call inherit-product-if-exists, vendor/asus/X01BD/X01BD-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-pa
 
 # Properties
 -include $(LOCAL_PATH)/props.mk
