@@ -139,6 +139,10 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/dsp:/dsp \
     /vendor/firmware_mnt:/firmware
 
+# Power
+TARGET_POWER_BINDMOUNT_VENDOR := true
+TARGET_USES_INTERACTION_BOOST := true
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
