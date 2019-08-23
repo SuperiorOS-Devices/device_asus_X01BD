@@ -48,9 +48,7 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String PREF_BACKLIGHT_DIMMER = "backlight_dimmer";
     public static final String BACKLIGHT_DIMMER_PATH = "/sys/module/mdss_fb/parameters/backlight_dimmer";
 
-    public static final String PREF_ENABLE_HAL3 = "hal3";
-    public static final String HAL3_SYSTEM_PROPERTY = "persist.camera.HAL3.enabled";
-
+    public static final String KEY_VIBSTRENGTH = "vib_strength";
     public static final String CATEGORY_DISPLAY = "display";
     public static final String PREF_DEVICE_KCAL = "device_kcal";
 
@@ -88,10 +86,6 @@ public class DeviceSettings extends PreferenceFragment implements
         setPreferencesFromResource(R.xml.preferences_asus_parts, rootKey);
 
         String device = FileUtils.getStringProp("ro.build.product", "unknown");
-
-        mEnableHAL3 = (SecureSettingSwitchPreference) findPreference(PREF_ENABLE_HAL3);
-        mEnableHAL3.setChecked(FileUtils.getProp(HAL3_SYSTEM_PROPERTY, false));
-        mEnableHAL3.setOnPreferenceChangeListener(this);
 
         mTorchBrightness = (SecureSettingCustomSeekBarPreference) findPreference(PREF_TORCH_BRIGHTNESS);
         mTorchBrightness.setEnabled(FileUtils.fileWritable(TORCH_1_BRIGHTNESS_PATH) &&
@@ -162,10 +156,6 @@ public class DeviceSettings extends PreferenceFragment implements
     public boolean onPreferenceChange(Preference preference, Object value) {
         final String key = preference.getKey();
         switch (key) {
-            case PREF_ENABLE_HAL3:
-                FileUtils.setProp(HAL3_SYSTEM_PROPERTY, (Boolean) value);
-                break;
-
             case PREF_TORCH_BRIGHTNESS:
                 FileUtils.setValue(TORCH_1_BRIGHTNESS_PATH, (int) value);
                 FileUtils.setValue(TORCH_2_BRIGHTNESS_PATH, (int) value);
