@@ -147,6 +147,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.gralloc.disable_wb_ubwc=1 \
     vendor.display.disable_partial_split=1 \
     vendor.display.disable_rotator_downscale=1 \
+    vendor.display.enable_default_color_mode=0 \
     vendor.display.perf_hint_window=50 \
     vendor.display.disable_rotator_downscale=1 \
     debug.composition.type=c2d \
@@ -162,9 +163,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.performance.tuning=1 \
     video.accelerate.hw=1
 
-# Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.havoc.maintainer=SonalSingh
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     media.aac_51_output_enabled=true \
