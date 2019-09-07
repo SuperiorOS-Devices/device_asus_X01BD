@@ -1,0 +1,18 @@
+[
+  {
+    "repository":  "kernel_asus_sdm660",
+    "target_path": "kernel/asus/sdm660",
+    "branch": "ten-wip"
+  },
+  {
+    "repository":  "vendor_asus_X01BD",
+    "target_path": "vendor/asus/X01BD",
+    "branch": "ten-wip"
+  },
+  {
+    "repository": "LineageOS/android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "branch": "lineage-17.0",
+    "remote": "github"
+  }
+]
