@@ -138,10 +138,6 @@ PRODUCT_PACKAGES += \
     libxml2 \
     Snap
 
-# Charger
-PRODUCT_PACKAGES += \
-    charger_res_images
-
 # Device mapper verity
 PRODUCT_SYSTEM_VERITY_PARTITION=/dev/block/bootdevice/by-name/system
 PRODUCT_VENDOR_VERITY_PARTITION=/dev/block/bootdevice/by-name/vendor

@@ -12,9 +12,6 @@ vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb
 # Audio firmware
 vendor/firmware/tfa98xx.cnt
 
-# Charger
-vendor/bin/charger
-
 # Camera
 vendor/lib/hw/camera.sdm660.so
 vendor/lib/libarcsoft_arc3dnr_intf.so
