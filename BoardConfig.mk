@@ -144,8 +144,10 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/firmware_mnt:/firmware
 
 # Power
+TARGET_TAP_TO_WAKE_NODE := "/proc/tpd_gesture"
 TARGET_POWER_BINDMOUNT_VENDOR := true
 TARGET_USES_INTERACTION_BOOST := true
+TARGET_USES_NON_LEGACY_POWERHAL := true
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom

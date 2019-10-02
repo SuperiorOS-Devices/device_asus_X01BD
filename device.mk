@@ -73,7 +73,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    power.qcom
+    android.hardware.power@1.2-service
 
 # QTI Common
 -include vendor/qcom/common/*/qti-*.mk
