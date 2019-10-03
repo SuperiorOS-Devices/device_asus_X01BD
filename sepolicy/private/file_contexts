@@ -1,6 +1,2 @@
-# Files in rootfs
-/bt_firmware(/.*)?       u:object_r:bt_firmware_file:s0
-/firmware(/.*)?          u:object_r:firmware_file:s0
-
 # USB HAL
 /(product|system/product)/vendor_overlay/[0-9]+/bin/hw/android\.hardware\.usb@1\.0-service    u:object_r:hal_usb_default_exec:s0
