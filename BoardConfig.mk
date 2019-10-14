@@ -165,5 +165,9 @@ BOARD_VNDK_VERSION := current
 # Wifi
 DISABLE_EAP_PROXY := true
 
+# Vendor init
+TARGET_INIT_VENDOR_LIB := libinit_X01BD
+TARGET_RECOVERY_DEVICE_MODULES := libinit_X01BD
+
 # Inherit from the proprietary version
 -include vendor/asus/X01BD/BoardConfigVendor.mk
