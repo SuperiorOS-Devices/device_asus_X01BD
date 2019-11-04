@@ -396,6 +396,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vr.sdm660
 
+# Wallpapers
+PRODUCT_PACKAGES += \
+    WallpapersBReel2019
+
 # WFD
 PRODUCT_PACKAGES += \
     libnl
