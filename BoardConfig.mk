@@ -225,7 +225,9 @@ VENDOR_SECURITY_PATCH := 2018-06-05
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
-#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # WiFi
 BOARD_HAS_QCOM_WLAN := true
