@@ -434,5 +434,5 @@ vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 vendor/firmware/libpn553_fw.so:vendor/lib/libpn553_fw.so
 
 # NVRAM
-bin/nvram_btwifi:vendor/bin/nvram_btwifi
+bin/nvram_btwifi:vendor/bin/nvram_btwifi|08cafeae24b0a7203e1ee67b1bd4acab24199438
 lib64/libmmi.so:vendor/lib64/libmmi.so|e3c16694406d6bc77c70f04f0d979ca4e65498d5
