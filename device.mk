@@ -59,3 +59,6 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     power.qcom
+
+# QTI Common
+-include vendor/qcom/common/*/qti-*.mk
