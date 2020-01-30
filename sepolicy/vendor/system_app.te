@@ -1,0 +1,2 @@
+
+allow system_app nvram_btwifi_prop:property_service set;
