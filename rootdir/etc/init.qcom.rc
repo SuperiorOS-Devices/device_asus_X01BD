@@ -397,7 +397,7 @@ on post-fs-data
     mkdir /data/system/cdfinger 0700 system system
     restorecon /data/system/cdfinger
 
-service nvram_btwifi /vendor/bin/nvram_btwifi
+service nvram_btwifi /system/bin/nvram_btwifi
     user root
     group system
     oneshot
