@@ -45,8 +45,10 @@ product/lib64/vendor.display.postproc@1.0.so
 -product/lib64/vendor.qti.hardware.fm@1.0.so
 lib/fm_helium.so
 lib/libfm-hci.so
+-lib/libqcomfm_jni.so
 lib64/fm_helium.so
 lib64/libfm-hci.so
+-lib64/libqcomfm_jni.so
 
 # IMS
 -product/app/imssettings/imssettings.apk
