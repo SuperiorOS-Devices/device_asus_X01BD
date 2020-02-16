@@ -29,13 +29,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.cne.feature=1
 
-# Data 
+# Data
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.df.dev_name=rmnet_usb0 \
     ro.vendor.use_data_netmgrd=true \
     persist.vendor.data.mode=concurrent
 
-# Display 
+# Display
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.enable_default_color_mode=1 \
     vendor.gralloc.enable_fb_ubwc=1 \
@@ -57,7 +57,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
-    rild.libpath=/system/vendor/lib64/libril-qc-qmi-1.so \
+    rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     ril.subscription.types=NV,RUIM \
     DEVICE_PROVISIONED=1 \
     ro.telephony.default_network=20,20 \
