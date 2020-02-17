@@ -73,6 +73,9 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.manager@1.0
 
+# ParanoidDoze
+PRODUCT_PACKAGES += \
+    ParanoidDoze
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service
