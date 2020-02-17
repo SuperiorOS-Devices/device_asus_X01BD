@@ -23,7 +23,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.eis.enable=1 \
     persist.vendor.camera.is_type=5 \
     vendor.debug.camera.prop_dis=1 \
-    persist.vendor.camera.aec.sync=1
+    persist.vendor.camera.aec.sync=1 \
+    persist.camera.expose.aux=1 \
+    persist.camera.HAL3.enabled=1 \
+    persist.camera.preview.ubwc=0 \
 
 # CNE
 PRODUCT_PROPERTY_OVERRIDES += \
