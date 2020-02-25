@@ -105,6 +105,7 @@ etc/permissions/qti_permissions.xml
 
 # RIL
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+-product/app/QtiTelephonyService/QtiTelephonyService.apk
 product/etc/permissions/qcrilhook.xml
 product/etc/permissions/qti_telephony_hidl_wrapper.xml
 product/etc/permissions/qti_telephony_utils.xml
