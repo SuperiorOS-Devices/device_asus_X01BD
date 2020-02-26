@@ -155,7 +155,14 @@ TARGET_USES_NON_LEGACY_POWERHAL := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Sepolicy
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+TARGET_EXCLUDE_QCOM_SEPOLICY := true
+
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+    $(DEVICE_PATH)/sepolicy/private \
+    device/qcom/sepolicy/legacy-um/private
+
+BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
+    device/qcom/sepolicy/legacy-um/public
 
 # Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
