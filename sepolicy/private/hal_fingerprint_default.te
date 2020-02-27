@@ -1,1 +1,0 @@
-allow hal_fingerprint_default sysfs_usb_supply:lnk_file { read };
