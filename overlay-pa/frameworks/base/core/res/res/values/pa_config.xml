@@ -20,16 +20,14 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Gestures' key codes. If the gesture is not supported set it to 0. -->
-    <integer name="config_doubleTapKeyCode">143</integer>
-    <integer name="config_drawVKeyCode">252</integer>
-    <integer name="config_drawInverseVKeyCode">255</integer>
-    <integer name="config_drawOKeyCode">250</integer>
-    <integer name="config_drawMKeyCode">247</integer>
-    <integer name="config_drawWKeyCode">246</integer>
-    <integer name="config_drawSKeyCode">248</integer>
-    <integer name="config_drawArrowLeftKeyCode">253</integer>
-    <integer name="config_drawArrowRightKeyCode">254</integer>
-    <integer name="config_twoFingerSwipeKeyCode">251</integer>
+    <integer name="config_doubleTapKeyCode">759</integer>
+    <integer name="config_drawVKeyCode">753</integer>
+    <integer name="config_drawWKeyCode">748</integer>
+    <integer name="config_drawSKeyCode">750</integer>
+    <integer name="config_drawEKeyCode">749</integer>
+    <integer name="config_drawZKeyCode">751</integer>
+    <integer name="config_drawCKeyCode">752</integer>
+    <integer name="config_oneFingerSwipeUpKeyCode">758</integer>
 
     <!-- Default settings for gestures
              0 - Disabled
@@ -43,10 +41,6 @@
              8 - Open dialer -->
     <integer name="config_doubleTapDefault">1</integer>
     <integer name="config_drawVDefault">2</integer>
-    <integer name="config_drawODefault">7</integer>
-    <integer name="config_twoFingerSwipeDefault">4</integer>
-    <integer name="config_drawArrowLeftDefault">6</integer>
-    <integer name="config_drawArrowRightDefault">5</integer>
 
     <!-- Whether to intercept inputs on screen off -->
     <bool name="config_enableKeyHandler">true</bool>
