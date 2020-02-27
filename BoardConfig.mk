@@ -164,6 +164,10 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
     device/qcom/sepolicy/legacy-um/public
 
+BOARD_SEPOLICY_DIR += \
+    device/qcom/sepolicy/legacy-um/vendor/common \
+    device/qcom/sepolicy/legacy-um/vendor/sdm660
+
 # Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 BOARD_VNDK_VERSION := current
