@@ -8,7 +8,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.bluetooth.soc=cherokee \
     ro.bluetooth.library_name=libbluetooth_qti.so \
-    persist.vendor.btstack.enable.splita2dp=true \
     persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
     ro.bluetooth.emb_wp_mode=true \
     ro.bluetooth.wipower=true \
