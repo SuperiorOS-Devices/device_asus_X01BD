@@ -360,9 +360,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
-# System properties
--include $(LOCAL_PATH)/system_prop.mk
-
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
@@ -400,9 +397,6 @@ PRODUCT_PACKAGES += \
 # QNS
 PRODUCT_PACKAGES += \
     libstdc++.vendor
-
-# Vendor properties
--include $(LOCAL_PATH)/vendor_prop.mk
 
 # VNDK-SP:
 PRODUCT_PACKAGES += \
