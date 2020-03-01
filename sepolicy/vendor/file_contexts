@@ -24,3 +24,6 @@
 /vendor/bin/nvram_btwifi                                                      u:object_r:nvram_btwifi_exec:s0
 
 /vendor/bin/init.wlan.sh    u:object_r:qti_init_shell_exec:s0
+
+# FPS Info
+/sys/devices/virtual/graphics/fb0/measured_fps                              u:object_r:sysfs_fps:s0
