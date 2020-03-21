@@ -72,6 +72,17 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gestures.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gestures.kl
 
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.0 \
+    android.hardware.nfc@1.1 \
+    android.hardware.nfc@1.2 \
+    android.hardware.secure_element@1.0 \
+    com.android.nfc_extras \
+    Tag \
+    vendor.nxp.nxpese@1.0 \
+    vendor.nxp.nxpnfc@1.0
+
 # ParanoidDoze
 PRODUCT_PACKAGES += \
     ParanoidDoze
