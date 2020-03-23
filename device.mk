@@ -24,9 +24,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-pa
 
-# Properties
--include $(LOCAL_PATH)/props.mk
-
 PRODUCT_TARGET_VNDK_VERSION := 29
 
 # Device uses high-density artwork where available
