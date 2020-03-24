@@ -26,6 +26,10 @@ TARGET_INCLUDE_WIFI_EXT := true
 # Inherit some common SuperiorOS stuff
 $(call inherit-product, vendor/superior/config/common.mk)
 
+# Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+        ro.superior.maintainer=Jayant-Deshmukh
+
 # Inherit from X01BD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
