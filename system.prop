@@ -40,6 +40,9 @@ vendor.display.disable_skip_validate=1
 # FM
 ro.fm.transmitter=false
 
+# Gesture
+persist.asus.gesture.switch=1
+
 # Graphics
 debug.sf.enable_hwc_vds=1
 debug.sf.hw=1 
