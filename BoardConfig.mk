@@ -108,6 +108,9 @@ TARGET_USES_GRALLOC1 := true
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
+# Encryption
+TARGET_HW_DISK_ENCRYPTION := true
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
