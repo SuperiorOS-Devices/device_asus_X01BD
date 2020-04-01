@@ -56,6 +56,10 @@ PRODUCT_PACKAGES += \
     libbluetooth_qti \
     libbt-logClient.so
 
+# Custom init
+PRODUCT_PACKAGES += \
+    init.qcom.rc
+
 # Display
 PRODUCT_PACKAGES += \
     libdisplayconfig \

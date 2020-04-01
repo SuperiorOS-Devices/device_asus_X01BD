@@ -1,0 +1,2 @@
+on post-fs
+    mount none /dev/null /vendor/etc/acdbdata/QRD* bind
