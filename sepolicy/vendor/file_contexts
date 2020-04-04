@@ -22,8 +22,12 @@
 /sys/devices/platform/kcal_ctrl.0(/.*)?                                       u:object_r:kcal_dev:s0
 /sys/bus/platform/drivers/kcal_ctrl(/.*)?                                     u:object_r:kcal_dev:s0
 
+# Persist files
+/mnt/vendor/persist/flag(/.*)?                                                u:object_r:persist_region_file:s0
+
 # Scripts
 /(vendor|system/vendor)/bin/init\.btmac\.sh                                   u:object_r:init_blutmac_exec:s0
+/(vendor|system/vendor)/bin/init\.country_code\.sh                            u:object_r:qti_init_shell_exec:s0
 /(vendor|system/vendor)/bin/init\.wlan\.sh                                    u:object_r:qti_init_shell_exec:s0
 
 # Touch
