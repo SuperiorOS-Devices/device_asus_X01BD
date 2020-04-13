@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019-2020 The Colt-Enigma Project
+# Copyright (C) 2019-2020 The MSM-Xtended Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/colt_X01BD.mk
+    $(LOCAL_DIR)/xtended_X01BD.mk
 
 COMMON_LUNCH_CHOICES := \
-    colt_X01BD-eng \
-    colt_X01BD-user \
-    colt_X01BD-userdebug
+    xtended_X01BD-eng \
+    xtended_X01BD-user \
+    xtended_X01BD-userdebug
