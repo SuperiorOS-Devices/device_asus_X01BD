@@ -16,7 +16,7 @@
 #
 
 BOARD_VENDOR := asus
-
+ALLOW_MISSING_DEPENDENCIES := true
 DEVICE_PATH := device/asus/X01BD
 
 # Platform
