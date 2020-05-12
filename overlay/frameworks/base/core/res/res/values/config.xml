@@ -540,6 +540,12 @@
     <!-- Should we filter any display modes which are unampped? -->
     <bool name="config_filterDisplayModes">true</bool>
 
+    <!-- Enable live display -->
+    <bool name="config_liveDisplayAvailable">true</bool>
+
+    <!-- Use live display for temperature control-->
+    <bool name="config_nightDisplayAvailable">false</bool>
+
     <!-- Whether the device supports Smart Pixels -->
     <bool name="config_enableSmartPixels">true</bool>
 
