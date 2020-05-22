@@ -22,8 +22,16 @@ def FullOTA_Assertions(info):
   AddModemAssertion(info, False)
   return
 
+def FullOTA_InstallEnd(info):
+  OTA_InstallEnd(info)
+  return
+
 def IncrementalOTA_Assertions(info):
   AddModemAssertion(info, True)
+  return
+
+def IncrementalOTA_InstallEnd(info):
+  OTA_InstallEnd(info)
   return
 
 def AddModemAssertion(info, incremental):
@@ -45,11 +53,17 @@ abort("Error: This package requires firmware version ' + version_firmware + \
       info.script.AppendExtra(cmd)
   return
 
-def FullOTA_InstallEnd(info):
-  info.script.Mount("/system")
-  info.script.Mount("/vendor")
-  info.script.Mount("/mnt/vendor/persist")
+def OTA_InstallEnd(info):
+  info.script.Print("Mounting System, Vendor & Persist")
+  info.script.AppendExtra('mount("ext4", "EMMC", "/dev/block/bootdevice/by-name/system", "/system_root");')
+  info.script.AppendExtra('mount("ext4", "EMMC", "/dev/block/bootdevice/by-name/vendor", "/vendor");')
+  info.script.AppendExtra('mount("ext4", "EMMC", "/dev/block/bootdevice/by-name/persist", "/mnt/vendor/persist");')
+  info.script.Print("Running remove_nfc script")
   RunCustomScript(info, "device_check.sh", "")
+  info.script.Print("Unmounting System, Vendor & Persist")
+  info.script.AppendExtra('unmount("/system_root");')
+  info.script.AppendExtra('unmount("/vendor");')
+  info.script.AppendExtra('unmount("/mnt/vendor/persist");')
   return
 
 def RunCustomScript(info, name, arg):
