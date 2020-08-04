@@ -25,6 +25,9 @@ $(call inherit-product, vendor/superior/config/common.mk)
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Def Launcher
+TARGET_LAUNCHER := lawnchair
+
 # Google Connectivity Services
 TARGET_INCLUDE_WIFI_EXT := true
 
