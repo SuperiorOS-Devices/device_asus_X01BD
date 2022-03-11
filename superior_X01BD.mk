@@ -12,6 +12,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit some common SuperiorOS stuff
 $(call inherit-product, vendor/superior/config/common.mk)
 
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Inherit from X01BD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
